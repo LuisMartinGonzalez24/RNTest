@@ -16,7 +16,7 @@
     }
   },
   "lint-staged": {
-    "./**/*.{tsx}": [
+    "./*.tsx": [
       "prettier --write"
     ]
   },
