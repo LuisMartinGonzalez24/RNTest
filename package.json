@@ -7,19 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "./**/*.{tsx}": [
-      "eslint . --fix",
-      "prettier --write ."
-    ]
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "lottie-react-native": "^5.1.4",
@@ -43,9 +31,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.6",
-    "husky": "^8.0.1",
     "jest": "^26.6.3",
-    "lint-staged": "^13.0.3",
     "metro-react-native-babel-preset": "^0.70.3",
     "prettier": "^2.7.1",
     "react-test-renderer": "18.0.0",
